@@ -6,4 +6,9 @@
     <input type="text" [(ngModel)]="text" name="text" />
     <input type="submit" value="Submit" />
   </form>
+  <ul>
+    <li *ngFor="let idea of ideas">
+      {{ idea }}
+      </li>
+  </ul>
 </section>
