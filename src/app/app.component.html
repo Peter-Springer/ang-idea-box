@@ -3,7 +3,7 @@
     {{title}}
   </h1>
   <form (ngSubmit)="submitForm($event)">
-    <input type="text" ng-model="text" name="text" />
+    <input type="text" [(ngModel)]="text" name="text" />
     <input type="submit" value="Submit" />
   </form>
 </section>

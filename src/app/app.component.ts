@@ -7,9 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Angular Idea Box';
+  ideas = [];
   submitForm = (e) => {
     e.preventDefault();
-    console.log('hello')
+    console.log('hello');
+    this.ideas.push(this.text);
+    console.log(this.ideas);
+    this.text = '';
   };
-  text = 'hello';
+  text = '';
 };
